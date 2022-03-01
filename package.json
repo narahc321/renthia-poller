@@ -1,0 +1,19 @@
+{
+  "name": "renthia-poller",
+  "version": "1.0.0",
+  "description": "Frequently poll Renthia API to find a flat with my preferences ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/narahc321/renthia-poller.git"
+  },
+  "author": "Sai Charan Teja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/narahc321/renthia-poller/issues"
+  },
+  "homepage": "https://github.com/narahc321/renthia-poller#readme"
+}
