@@ -18,7 +18,7 @@ This is a simple node app which will ping you on Slack when a new house/appartme
   > npm i
 ```
 
-4. open config.json file and set you preferences and your Slack webhook.
+4. open config.json file and set you preferences and make sure you update the slack_hook with your Slack webhook.
 Follow [this](https://api.slack.com/messaging/webhooks) to create a new webhook. You can also set the polling period in config.json.
 
 5. Finally Start the app and keep it running. It will notify in you slack channel when a new house/apartment with your preferences is added.

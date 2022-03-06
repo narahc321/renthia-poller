@@ -1,3 +1,4 @@
+const { Console } = require("console");
 const fs = require("fs");
 const fetch = require("node-fetch");
 
@@ -46,8 +47,8 @@ const getPrevApartments = (config) => {
 };
 
 const postOnSlack = (ID, slack_hook, details_api) => {
+  console.log("Posting on Slack");
   const payload = {
-    channel: "renthia-stockholm-testing",
     attachments: [
       {
         color: "#4687f0",
@@ -106,21 +107,19 @@ const postOnSlack = (ID, slack_hook, details_api) => {
 };
 
 const checkIfAnythingNew = (new_apartments, slack_hook, details_api) => {
-  const config = fs.readFileSync(APARTMENTS_LIST_PATH, "utf-8");
-
-  new_apartments = [new_apartments[0]];
   new_apartments.forEach((apartment) => {
     if (!apartments.includes(apartment[ID])) {
+      console.log("Found a New Apartment " + apartment[ID]);
       postOnSlack(apartment[ID], slack_hook, details_api);
       apartments.push(apartment[ID]);
       writeApartments(apartments);
-      console.log(apartment);
       return;
     }
   });
 };
 
 const fetchApartments = (url, slack_hook, details_api) => {
+  console.log("Fetching Apartments");
   fetch(url)
     .then((response) => response.json())
     .then((response_json) =>
