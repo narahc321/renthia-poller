@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/narahc321/renthia-poller/issues"
   },
-  "homepage": "https://github.com/narahc321/renthia-poller#readme"
+  "homepage": "https://github.com/narahc321/renthia-poller#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.6.7"
+  }
 }

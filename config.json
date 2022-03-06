@@ -1,0 +1,18 @@
+{
+  "preferences": {
+    "city": "Stockholm",
+    "count": 1000,
+    "min_rooms": null,
+    "max_rooms": null,
+    "min_size": null,
+    "max_size": null,
+    "min_price": null,
+    "max_price": null
+  },
+  "data_api": "https://renthia.com/api/Property/City",
+  "details_api": "https://renthia.com/en/property/details/",
+  "__comment__": ["comment"],
+  "reset_apartments_list": true,
+  "polling_period": 10000,
+  "slack_hook": ""
+}
