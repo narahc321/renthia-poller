@@ -1,6 +1,6 @@
 This is a simple node app which will ping you on Slack when a new house/appartment with the preferences you configured gets added to https://renthia.com/
 
-<h2>How To Use<h2>
+<h2>How To Use</h2>
 
 1. Just Clone the Repo
 > git clone https://github.com/narahc321/renthia-poller.git
